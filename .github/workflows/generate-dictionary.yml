@@ -15,7 +15,7 @@ jobs:
           npm ci
       - name: Update Dictionary Typescript File
         run: | 
-          rm index.ts && npm run update-dictionary
+          npm run update-dictionary
       - name: Bundle Files
         run: | 
           npm run build
