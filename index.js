@@ -27,7 +27,8 @@ module.exports = __toCommonJS(shared_json_dood_remastered_exports);
 // dictionary/en.json
 var en_default = {
   backend: "cool",
-  frontend: "not cool"
+  frontend: "not cool",
+  devops: "supercool"
 };
 
 // index.ts
