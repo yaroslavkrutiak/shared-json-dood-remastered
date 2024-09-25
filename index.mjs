@@ -1,7 +1,5 @@
 // dictionary/en.json
-var en_default = {
-  a: 1
-};
+var en_default = {};
 
 // index.ts
 var dictionary = {
