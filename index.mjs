@@ -1,5 +1,8 @@
 // dictionary/en.json
-var en_default = {};
+var en_default = {
+  backend: "cool",
+  frontend: "not cool"
+};
 
 // index.ts
 var dictionary = {
