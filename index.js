@@ -25,7 +25,10 @@ __export(shared_json_dood_remastered_exports, {
 module.exports = __toCommonJS(shared_json_dood_remastered_exports);
 
 // dictionary/en.json
-var en_default = {};
+var en_default = {
+  backend: "cool",
+  frontend: "not cool"
+};
 
 // index.ts
 var dictionary = {
