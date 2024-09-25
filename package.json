@@ -1,0 +1,19 @@
+{
+  "name": "shared-json-dood-remastered",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaroslavkrutiak/shared-json-dood-remastered.git"
+  },
+  "exports": {
+    "./translations": "./translations"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
