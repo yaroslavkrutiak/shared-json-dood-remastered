@@ -5,8 +5,9 @@
   "module": "index.mjs",
   "types": "index.d.ts",
   "scripts": {
-    "build": "tsup index.ts --format cjs,esm --dts -d ./",
-    "update-dictionary": "ts-node utils/generate-dictionary.ts",
+    "prebuild": "rm -f index.{ts,d.mts,d.ts,js,mjs}",
+    "build": "ts-node utils/generate-dictionary.ts",
+    "bundle": "tsup index.ts --format cjs,esm --dts -d ./",
     "prepare": "husky"
   },
   "repository": {
@@ -14,7 +15,7 @@
     "url": "git+https://github.com/yaroslavkrutiak/shared-json-dood-remastered.git"
   },
   "exports": {
-    ".": "./index"
+    ".": "./index.js"
   },
   "lint-staged": {
     "dictionary/*.json": [

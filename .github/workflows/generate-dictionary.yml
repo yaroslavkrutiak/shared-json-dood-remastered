@@ -6,6 +6,8 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.head.ref != 'update-dictionary'
+
     steps:
       - uses: actions/checkout@v4
         with:
@@ -15,10 +17,10 @@ jobs:
           npm ci
       - name: Update Dictionary Typescript File
         run: | 
-          npm run update-dictionary
-      - name: Bundle Files
-        run: | 
           npm run build
+      - name: Bundle
+        run: | 
+          npm run bundle
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
