@@ -15,10 +15,10 @@ jobs:
           npm ci
       - name: Update Dictionary Typescript File
         run: | 
-          "rm index.ts && npm run update-dictionary"
+          rm index.ts && npm run update-dictionary
       - name: Bundle Files
         run: | 
-          "npm run build"
+          npm run build
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
